@@ -15,4 +15,7 @@ func main() {
 	// Não posso usar y = x diretamente porque são tipos diferentes
 	// apesar de ambos serem inteiros e int um tipo subjacente e hotdog
 	//y = x
+
+	// para fazer isso preciso converter uma delas para ficar do mesmo tipo
+	y = int(x)
 }
