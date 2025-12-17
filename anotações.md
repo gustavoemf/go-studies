@@ -15,3 +15,48 @@ não iremos usar
 ### Keyword "var"
 - só use a declaração longa de variáveis quando não inicializar uma variável
 - use a forma curta para declarar e inicializar
+
+### Tipos
+
+- Go é uma linguagem de tipos estáticos
+- Tipos de dados primitivos: int, string e bool
+- Tipos de dados compostos: Tipos compostos de tipos primitivo criados pelo usuário
+
+### Valor zero
+- valores presentes em uma variável antes dela ser inicializada
+- os zeros:
+    - int: 0
+    - float: 0.0
+    - bool: false
+    - string: ""
+    - pointers, functions, interfaces, slices, channels, maps: nil
+- usar := sempre que possível e var em package-level
+
+
+### fmt
+- interpreted string literal vs raw string literal
+- Rune: cada caracter de uma string
+- um literal é uma notação para representar um valor fixo no código fonte
+- Format printing: documentação
+    - Grupo #1: Print -> standard out
+        - func Print(a ...interface{}) (n int, err error)
+        - func Println(a ...interface{}) (n int, err error)
+        - func Printf(format string, a ...interface{}) (n int, err error)
+    - Grupo #2: Print -> string, podendo ser usado como variável
+        - func Sprint(a ...interface{}) string
+        - func Sprintf(format string, a ...interface{}) string
+        - func Sprintln(a ...interface{}) string
+    - Grupo #3: Print -> file, writer interface, e.g. arquivo ou resposta de servidor
+        - func Fprint(w io.Writer, a ...interface{}) (n int, err error)
+        - func Fprintf(w io.Writer, format string, a ...interface) (n int, err error)
+        - func Fprintln(w io.Writer, a ...interface{}) (n int, err errror)
+- entre cada item no Println há um espaço enquanto que no Sprint não ao concatenar
+
+### criando tipos
+- criar um tipo próprio habilita o uso de métodos e interfaces
+- tipo subjacente é o tipo interno daquele tipo que foi criado
+- apesar de subjacente não posso atribuir os valores de um para o outro
+
+### conversão de tipos
+- em Go não existe coersion nem casting apenas convertion
+- T(x) -> "T" é o tipo que eu quero e "x" o valor que quero converter para "T"
