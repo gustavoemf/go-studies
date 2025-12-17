@@ -76,3 +76,7 @@ não iremos usar
 - são valores imutáveis
 - podem ser tipadas ou não
     - as não tipadas só terão um tipo atribuído a elas quando forem usadas
+    - constantes em Go podem mudar de tipo, mas nunca de significado
+    - se mudar o significado -> conversão explícita obrigatória
+- tipos de constantes são definidos no uso enquanto o tipo de variáveis são definidos durante a atribuição
+- podem ser declaradas de uma só vez como uma lista, assim como os imports
