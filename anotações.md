@@ -60,3 +60,19 @@ não iremos usar
 ### conversão de tipos
 - em Go não existe coersion nem casting apenas convertion
 - T(x) -> "T" é o tipo que eu quero e "x" o valor que quero converter para "T"
+
+### strings
+- carreira de bytes seuquenciais
+- strings são imutáveis
+- uma string é um "slice of bytes"
+- conversão para slice of bytes: []byte(x)
+
+### sistemas numéricos
+- base 10: decimal 0~9
+- base 2: binário 0~1
+- base 16: hexadecimal 0~f
+
+### constantes
+- são valores imutáveis
+- podem ser tipadas ou não
+    - as não tipadas só terão um tipo atribuído a elas quando forem usadas
